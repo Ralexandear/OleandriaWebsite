@@ -361,6 +361,9 @@ template {
   display: none;
 }
 
+.navbar {
+  z-index: 1000;
+}
 .navbar-brand svg {
   height: 100px;
   color: rgb(93, 93, 93);
