@@ -1,0 +1,18 @@
+section#nav-section
+  nav.navbar.navbar-expand-sm.navbar-light.bg-body-tertiary.fixed-top.d-flex.justify-content-center
+    .container
+        a.navbar-brand(href="/")
+          include ./_logo.pug
+          //- img(src="/public/icons/oleandria_logo.svg" style="height: 100px; color: green")
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+
+        .collapse.navbar-collapse.justify-content-end.w-100#navbarNav
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href="#") Дизайн
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href="#") Разработка
+            li.nav-item
+              a.nav-link(href="#") О нас

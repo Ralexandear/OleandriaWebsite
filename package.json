@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }, 
+  "scripts": {
+    "build:sass": "sass src/sass/main.scss public/css/main.css --style compressed",
+    "watch:sass": "sass --watch src/sass:public/css"
   }
 }
