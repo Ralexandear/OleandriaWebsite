@@ -2,7 +2,7 @@ section#nav-section
   nav.navbar.navbar-expand-sm.navbar-light.d-flex.justify-content-center.position-absolute.w-100
     .container
         a.navbar-brand(href="./")
-          include ./_logo.pug
+          include ../public/svg/_logo.pug
           //- img(src="/public/icons/oleandria_logo.svg" style="height: 100px; color: green")
         button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
           span.navbar-toggler-icon
@@ -11,7 +11,7 @@ section#nav-section
           ul.navbar-nav
             li.nav-item
               a.nav-link(href="#") Дизайн
-                span.sr-only (current)
+                //- span.sr-only 
             li.nav-item
               a.nav-link(href="#") Разработка
             li.nav-item

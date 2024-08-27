@@ -423,4 +423,21 @@ a:hover, a:focus {
   filter: drop-shadow(2px 2px 3px rgba(255, 254, 254, 0.5));
 }
 
-/*# sourceMappingURL=style.css.map */
+#carousel {
+  max-height: 1000px;
+  overflow: hidden;
+}
+#carousel .carousel-item {
+  height: 1000px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#footer-section {
+  z-index: 1000;
+  background: rgba(249, 247, 242, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=index.css.map */
