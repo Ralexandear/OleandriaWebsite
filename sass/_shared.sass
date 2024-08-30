@@ -1,0 +1,49 @@
+@import './layout/_reset.scss'
+@import './layout/_normalize.scss'
+@import './_breakpoints'
+@import './_vars'
+@import './_fonts'
+
+$navbar-lg-height: 100px
+$navbar-sm-height: 80px
+$navbar-height: 70px
+
+
+*
+  box-sizing: border-box
+  line-height: 120%!important
+
+
+.mb
+  margin-bottom: 120px
+
+
+// #content-wrapper
+//   padding-top: $navbar-height
+
+//   @media (min-width: map-get($grid-breakpoints, sm))
+//     padding-top: $navbar-sm-height
+
+//   @media (min-width: map-get($grid-breakpoints, sm))
+//     padding-top: $navbar-lg-height
+
+  
+
+
+.bg
+  &-body
+    background-color: $bg-color
+    &-tertiary
+      background-color: $bg-color-tertiary
+
+a
+  color: inherit
+  text-decoration: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+#oleandria-logo
+  filter: drop-shadow(2px 2px 3px rgba(255, 254, 254, 0.5))
+
+

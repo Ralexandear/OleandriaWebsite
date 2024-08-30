@@ -1,0 +1,25 @@
+@import '../_vars'
+
+#section-footer
+
+  & .wrapper
+    height: 150px
+
+    @media (min-width: map-get($grid-breakpoints, sm))
+      height: 80px
+
+  & .confidential-policy
+    text-decoration: underline
+    font-size: 12px
+
+  & p
+    font-size: 10px
+    @media (min-width: map-get($grid-breakpoints, sm))
+      font-size: 14px
+
+  & .social-media-icon svg
+    height: 40px
+    cursor: pointer
+
+    &:hover
+      fill: $bg-color

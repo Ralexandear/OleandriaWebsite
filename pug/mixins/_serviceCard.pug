@@ -1,0 +1,8 @@
+mixin serviceCard(imageSrc, header, textContent)
+  .card.service__card
+    .col-8
+      .container.h-100.d-flex.align-items-center
+        h3.p-4.service__card-header!= header
+        p.p-4!= textContent
+    .col-4
+      .card.service__image.h-100.border-0(style=`background-image: url('${imageSrc}')`)

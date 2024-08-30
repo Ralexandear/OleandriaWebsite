@@ -1,0 +1,40 @@
+extends ../components/layout.pug
+include ../mixins/_mainContent
+include ../mixins/_serviceCard
+
+
+block content
+  +mainContent(
+    '/public/img/components/carousel/design.jpg',
+    'Oleandria<br><span style="color: #B08298">Design<span>',
+    'накинем кринжа в будничную рутину'
+  )
+
+  section#section-services.services.mb-4
+    .container.mb
+      .row
+        h2.services__header Наши услуги
+
+    .container
+      .services__card-container.d-flex.flex-column.row-gap-5
+        +serviceCard(
+          '/public/img/pages/development/main.jpg',
+          'Google Sheets',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias animi facilis, maxime temporibus tempora ullam, illum quas deserunt dignissimos saepe quasi aperiam facere eos repellendus magni, adipisci amet repudiandae.'
+        )
+
+        +serviceCard(
+          '/public/img/pages/development/main.jpg',
+          'Google Sheets 1',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias animi facilis, maxime temporibus tempora ullam, illum quas deserunt dignissimos saepe quasi aperiam facere eos repellendus magni, adipisci amet repudiandae.'
+        )
+
+        +serviceCard(
+          '/public/img/pages/development/main.jpg',
+          'Google Sheets 2',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias animi facilis, maxime temporibus tempora ullam, illum quas deserunt dignissimos saepe quasi aperiam facere eos repellendus magni, adipisci amet repudiandae.'
+        )
+
+
+block script
+  script(src='/public/js/components/cardSlider.js')

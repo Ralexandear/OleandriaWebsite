@@ -1,12 +1,14 @@
 {
   "dependencies": {
+    "express": "^4.19.2",
     "pug": "^3.0.3"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "sass": "^1.77.8"
-  }, 
+  },
   "scripts": {
-    "build:sass": "sass src/sass/main.scss public/css/main.css --style compressed",
-    "watch:sass": "sass --watch src/sass:public/css"
+    "build:sass": "sass sass/main.scss public/css/main.css --style compressed",
+    "watch:sass": "sass --watch sass:public/css"
   }
 }

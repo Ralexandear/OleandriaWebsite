@@ -1,0 +1,21 @@
+@import '../style'
+
+#carousel
+  overflow: hidden
+
+  .carousel-item
+    height: 100vh
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+#section-footer
+  position: fixed
+  bottom: 0
+  left: 0
+  width: 100%
+
+  z-index: 1000
+  background: rgba($bg-color-tertiary, 0.5)
+  backdrop-filter: blur(10px) /* Дополнительное размытие фона */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) /* Легкая тень */

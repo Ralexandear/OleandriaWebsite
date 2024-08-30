@@ -1,0 +1,7 @@
+extends ../components/layout.pug
+
+block content
+  .carousel.slide#carousel(data-bs-ride="carousel" data-bs-interval="5000")
+    .carousel-inner
+      each path, index in ["/public/img/components/carousel/design.jpg", "/public/img/components/carousel/development.jpg"]
+        .carousel-item(class=(index === 0 ? 'active' : ''), style=`background-image: url('${path}')`)

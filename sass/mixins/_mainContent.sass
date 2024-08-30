@@ -1,0 +1,35 @@
+@import '../_shared'
+
+
+
+#section-main
+  & .container
+    margin: 0 auto
+    padding-top: $navbar-height
+    @media (min-width: map-get($grid-breakpoints, sm))   
+      padding-top: $navbar-sm-height
+
+    @media (min-width: map-get($grid-breakpoints, lg))
+      padding-top: $navbar-lg-height
+
+
+
+  & .main
+    height: 800px
+
+    &__image
+      background-repeat: no-repeat
+      background-position: 0 30%
+      background-size: cover
+
+    &__text-container
+      // position: absolute
+      // top: 35%
+      // left: 10%
+      // width: 450px
+
+      color: $bg-color
+      background: linear-gradient(to bottom, rgba($bg-color-tertiary, 0.5) 3%, rgba(black, 0.5))
+      backdrop-filter: blur(15px) /* Дополнительное размытие фона */
+
+    
